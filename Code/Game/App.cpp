@@ -71,7 +71,7 @@ void App::Startup()
 
 void App::LoadGameConfigXml()
 {
-	g_gameConfigBlackboard = NamedStrings();
+	g_gameConfigBlackboard = NamedProperties();
 	XmlDocument gameConfigXmlFile("Data/GameConfig.xml");
 	XmlResult loadResult = gameConfigXmlFile.LoadFile("Data/GameConfig.xml");
 	if (loadResult == XmlResult::XML_SUCCESS)
